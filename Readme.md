@@ -2,9 +2,9 @@
 
 * Студент: [Владимир Ильин](https://up.htmlacademy.ru/htmlcss/20/user/610629).
 <<<<<<< HEAD
-* Наставник: [Юрий Зайцев]
+* Наставник: [Юрий Зайцев](https://up.htmlacademy.ru/htmlcss/20/user/89805).
 =======
-* Наставник: [Юрий зайцев].
+* Наставник: [Юрий зайцев](https://up.htmlacademy.ru/htmlcss/20/user/89805).
 >>>>>>> 502f002487ada3f9387d4b00293a9139a0bd4a2e
 
 ---
