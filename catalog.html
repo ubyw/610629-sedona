@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-     </head>  
+  </head>  
   <body>
     <header class="main-header">
       <nav class="main-nav">
@@ -17,23 +17,22 @@
           <li class="site-nav-current"><a href="catalog.html">Гостиницы</a></li>
         </ul>
       </nav>
-     </header>
-	 <main class="container">
+    </header>
+	<main class="container">
 		<h1 class="visually-hidden">Гостиницы</h1>
-	 <section class="filters">
+	<section class="filters">
 		<h2 class="visually-hidden">Фильтр услуг</h2>
 		<!-- Здесь будет форма -->
-		<a href="#"><img src="img/catalog-background-image.jpg" width="100%" height="150"
-				alt="Фоновое фото">
+		<a href="#"><img src="img/catalog-background-image.jpg" width="100%" height="150" alt="Фоновое фото">
 				</a>
-		</section>
+	</section>
 	<section class="catalog">
 		<h2>Найдено:</h2>
 		<output name="sum">[3]</output>
 		
-		<ul class="breadcrumbs">
-		<h3>Сортировка:</h3>
-			<li class="breadcrumbs-current"><a href="#">По цене</a></li>
+		<ul class="sorting">
+		<p>Сортировка:</p>
+			<li class="sorting-current"><a href="#">По цене</a></li>
 			<li><a href="#">По типу</a></li>
 			<li><a href="#">По рейтингу</a></li>
 		</ul>
@@ -50,17 +49,13 @@
 					<img src="img/hotel-1.jpg" width="100" height="70" alt="Amara Resort">
 					</a>
 				</p>
-				<p class="catalog-item-type">
-					<b>Гостиница</b>
-				</p>
+				<p class="catalog-item-type">Гостиница</p>
 				<p class="catalog-item-price">
 					<b>От 4000 р.</b>
 					<a class="button" href="#">Подробнее</a>
 					<a class="button" href="#">Забронировать</a>
 				</p>
-				<p class="catalog-item-rating">
-					<b>Рейтинг: 8.5</b>
-				</p>
+				<p class="catalog-item-rating">Рейтинг: <span>8.5</span></p>
 			</li>
 			<li class="catalog-item">
 				<h3>
@@ -73,17 +68,13 @@
 					<img src="img/hotel-2.jpg" width="100" height="70" alt="Desert Quail Inn">
 					</a>
 				</p>
-				<p class="catalog-item-type">
-					<b>Мотель</b>
-				</p>
+				<p class="catalog-item-type">Мотель</p>
 				<p class="catalog-item-price">
 					<b>От 3000 р.</b>
 					<a class="button" href="#">Подробнее</a>
 					<a class="button" href="#">Забронировать</a>
 				</p>
-				<p class="catalog-item-rating">
-					<b>Рейтинг: 8.9</b>
-				</p>
+				<p class="catalog-item-rating">Рейтинг: <span>8.9</span></p>
 			</li>
 			<li class="catalog-item">
 				<h3>
@@ -96,23 +87,19 @@
 					<img src="img/hotel-3.jpg" width="100" height="70" alt="Villas at Poco Diabolo">
 					</a>
 				</p>
-				<p class="catalog-item-type">
-					<b>Апартаменты</b>
-				</p>
+				<p class="catalog-item-type">Апартаменты</p>
 				<p class="catalog-item-price">
 					<b>От 2000 р.</b>
 					<a class="button" href="#">Подробнее</a>
 					<a class="button" href="#">Забронировать</a>
 				</p>
-				<p class="catalog-item-rating">
-					<b>Рейтинг: 9.2</b>
-				</p>
+				<p class="catalog-item-rating">Рейтинг: <span>9.2</span></p>
 			</li>
 		</ul>	
 	</section>
 	</main>
 	 
-	  <footer class="footer-main">
+	<footer class="footer-main">
          <a class="footer-main-button" href="#">#VisitSedona</a>
          <div class="footer-social">
          <ul>
@@ -122,10 +109,11 @@
          </ul>
          </div>
          <p class="footer-copyright">
-         <span>Website by </span>
-         <a class="footer-copyright-logo">
-           <img src="https://htmlacademy.ru/htmlcss/logo"></a>
-		   <span class="logo">HTML Academy</span>
-       </footer>
-       </body>
-       </html>
+         	<a class="footer-copyright-logo">
+         	<span>Website by </span>
+         	<span class="logo">HTML Academy</span>
+         	<img src="https://htmlacademy.ru/htmlcss/logo"></a>
+				
+    </footer>
+  </body>
+</html>
