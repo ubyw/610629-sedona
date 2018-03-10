@@ -9,7 +9,7 @@
     <header class="main-header">
       <nav class="main-nav">
         <a class="main-nav-logo">
-          <img src="img/catalog/logo.png" width="137" height="70" alt="Логотип Седона">
+          <img src="img/logo.png" width="137" height="70" alt="Логотип Седона">
         </a>
         <ul class="site-nav">
           <li><a href="#">Информация</a></li>
@@ -24,30 +24,75 @@
 	<section class="filters">
 		<h2 class="visually-hidden">Фильтр услуг</h2>
 		<!-- Здесь будет форма -->
-		<a href="#"><img src="img/catalog-background-image.jpg" width="100%" height="150" alt="Фоновое фото">
-				</a>
+		<img class="visually-hidden" src="img/filter-background.png" width="1200" height="400" alt="filters background photo">
+		<form class="filters" method="get" action="https://echo.htmlacademy.ru">
+			<fieldset>
+				<legend>Инфраструктура:</legend>
+				<ul>
+					<li class="filters-option">
+						<input class="visually-hidden filters-input filters-input-checkbox" type="checkbox" name="pool" id="filters-pool" checked>
+						<label for="filters-pool">Бассейн</label>
+					</li>
+					<li class="filters-option">
+						<input class="visually-hidden filters-input filters-input-checkbox" type="checkbox" name="parking" id="filters-parking">
+						<label for="filters-parking">Паркинг</label>
+					</li>
+					<li class="filters-option">
+						<input class="visually-hidden filters-input filters-input-checkbox" type="checkbox" name="wi-fi" id="filters-wifi">
+						<label for="filters-wifi">Wi-Fi</label>
+					</li>
+				</ul>
+			</fieldset>
+			<fieldset>
+				<legend>Тип жилья:</legend>
+				<ul>
+					<li class="filters-option">
+						<input class="visually-hidden filters-input filters-input-checkbox" type="checkbox" name="hotel" id="filters-hotel" checked>
+						<label for="filters-hotel">Гостиница</label>
+					</li>
+					<li class="filters-option">
+						<input class="visually-hidden filters-input filters-input-checkbox" type="checkbox" name="motel" id="filters-motel" checked>
+						<label for="filters-motel">Мотель</label>
+					</li>
+					<li class="filters-option">
+						<input class="visually-hidden filters-input filters-input-checkbox" type="checkbox" name="appartment" id="filters-appartment" checked>
+						<label for="filters-appartment">Апартаменты</label>
+					</li>
+				</ul>
+
+			</fieldset>
+			<fieldset>
+				<legend>Стоимость в сутки (р):</legend>
+				<span class="min">От 0</span>
+				<span class="max">До 3000</span>
+				<a class="button" href="#">Показать</a>
+			</fieldset>
+		</form>
 	</section>
 	<section class="catalog">
 		<h2>Найдено:</h2>
 		<output name="sum">[3]</output>
-		
-		<ul class="sorting">
 		<p>Сортировка:</p>
-			<li class="sorting-current"><a href="#">По цене</a></li>
+		<ul class="sortin-one">
+			<li class="sorting-one-current"><a href="#">По цене</a></li>
 			<li><a href="#">По типу</a></li>
 			<li><a href="#">По рейтингу</a></li>
 		</ul>
+		<ul class="sorting-two">
+			<li><a href="#">По возрастанию</a></li>
+			<li><a href="#">По убыванию</a></li>
 			
+		</ul>	
 		<ul class="catalog-list">
 			<li class="catalog-item">
 				<h3>
 					<a href="catalog-item.html">
-						<span class="catalog-name">Amara Resort $ Spa</span>
+						Amara Resort $ Spa
 					</a>
 				</h3>
 				<p class="catalog-item-image">
 					<a href="catalog.html">
-					<img src="img/catalog/hotel.jpg" width="135" height="90" alt="Amara Resort">
+					<img src="img/hotel.jpg" width="135" height="90" alt="Hotel Amara Resort">
 					</a>
 				</p>
 				<p class="catalog-item-type">Гостиница</p>
@@ -61,12 +106,12 @@
 			<li class="catalog-item">
 				<h3>
 					<a href="catalog-item.html">
-						<span class="catalog-name">Desert Quail Inn</span>
+						Desert Quail Inn
 					</a>
 				</h3>
 				<p class="catalog-item-image">
 					<a href="catalog.html">
-					<img src="img/motel.jpg" width="135" height="90" alt="Desert Quail Inn">
+					<img src="img/motel.jpg" width="135" height="90" alt="Motel Desert Quail Inn">
 					</a>
 				</p>
 				<p class="catalog-item-type">Мотель</p>
@@ -80,12 +125,12 @@
 			<li class="catalog-item">
 				<h3>
 					<a href="catalog-item.html">
-						<span class="catalog-name">Villas at Poco Diabolo</span>
+						Villas at Poco Diabolo
 					</a>
 				</h3>
 				<p class="catalog-item-image">
 					<a href="catalog.html">
-					<img src="img/appartment.jpg" width="135" height="90" alt="Villas at Poco Diabolo">
+					<img src="img/appartment.jpg" width="135" height="90" alt="Appartment Villas at Poco Diabolo">
 					</a>
 				</p>
 				<p class="catalog-item-type">Апартаменты</p>
