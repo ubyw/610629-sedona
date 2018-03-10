@@ -23,8 +23,50 @@
 	<section class="filters">
 		<h2 class="visually-hidden">Фильтр услуг</h2>
 		<!-- Здесь будет форма -->
-		<img src="img/filter-background.png" width="1200" height="400"
-			alt="filters background photo">
+		<img class="visually-hidden" src="img/filter-background.png" width="1200" height="400" alt="filters background photo">
+		<form class="filters" method="get" action="https://echo.htmlacademy.ru">
+			<fieldset>
+				<legend>Инфраструктура:</legend>
+				<ul>
+					<li class="filters-option">
+						<input class="visually-hidden filters-input filters-input-checkbox" type="checkbox" name="pool" id="filters-pool" checked>
+						<label for="filters-pool">Бассейн</label>
+					</li>
+					<li class="filters-option">
+						<input class="visually-hidden filters-input filters-input-checkbox" type="checkbox" name="parking" id="filters-parking">
+						<label for="filters-parking">Паркинг</label>
+					</li>
+					<li class="filters-option">
+						<input class="visually-hidden filters-input filters-input-checkbox" type="checkbox" name="wi-fi" id="filters-wifi">
+						<label for="filters-wifi">Wi-Fi</label>
+					</li>
+				</ul>
+			</fieldset>
+			<fieldset>
+				<legend>Тип жилья:</legend>
+				<ul>
+					<li class="filters-option">
+						<input class="visually-hidden filters-input filters-input-checkbox" type="checkbox" name="hotel" id="filters-hotel" checked>
+						<label for="filters-hotel">Гостиница</label>
+					</li>
+					<li class="filters-option">
+						<input class="visually-hidden filters-input filters-input-checkbox" type="checkbox" name="motel" id="filters-motel" checked>
+						<label for="filters-motel">Мотель</label>
+					</li>
+					<li class="filters-option">
+						<input class="visually-hidden filters-input filters-input-checkbox" type="checkbox" name="appartment" id="filters-appartment" checked>
+						<label for="filters-appartment">Апартаменты</label>
+					</li>
+				</ul>
+
+			</fieldset>
+			<fieldset>
+				<legend>Стоимость в сутки (р):</legend>
+				<span class="min">От 0</span>
+				<span class="max">До 3000</span>
+				<a class="button" href="#">Показать</a>
+			</fieldset>
+		</form>
 	</section>
 	<section class="catalog">
 		<h2>Найдено:</h2>

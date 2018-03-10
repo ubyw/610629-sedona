@@ -74,9 +74,32 @@
           <a href="#"><img src="img/index-map.svg" width="auto" height="250"
           alt="Карта"></a>
           <h2>Заинтересовались?</h2>
-          <p>Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <span>Поиск гостиницы в Седоне</span>
+          <p class="request-info">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <span class="request-info">Поиск гостиницы в Седоне</span>
           <!-- Здесь будет форма -->
+          <form class="request-form" action="https://echo.htmlacademy.ru" method="post">
+            <p class="request-item">
+              <span>Дата заезда:</span>
+              <label for="request-date-in"></label>
+              <input id="request-date-in" type="text" name="date-in" value="" placeholder="24 апреля 2017">
+            </p>
+            <p class="request-item">
+              <span>Дата выезда:</span>
+              <label for="request-date-out"></label>
+              <input id="request-date-out" type="text" name="date-out" value="" placeholder="4 июля 2017">
+            </p>
+            <p class="request-item">
+              <span>Взрослые:</span>
+              <label for="request-adults-number"></label>
+              <input id="request-adults-number" type="text" name="adults-number" value="" placeholder="2">
+            </p>
+            <p class="request-item">
+              <span>Дети:</span>
+              <label for="request-childs-number"></label>
+              <input id="request-childs-number" type="text" name="childs-number" value="" placeholder="0">
+            </p>
+            <a class="button" href="#">Найти</a>
+          </form>
       </section>
     </main>
     <footer class="footer-main">
