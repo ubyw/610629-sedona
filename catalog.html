@@ -7,7 +7,7 @@
   <body>
     <header class="main-header">
       <nav class="main-nav">
-        <a class="main-nav-logo">
+        <a class="main-nav-logo" href="index.html">
           <img src="img/logo.png" width="137" height="70" alt="Логотип Седона">
         </a>
         <ul class="site-nav">
@@ -60,10 +60,21 @@
 				</ul>
 
 			</fieldset>
-			<fieldset>
-				<legend>Стоимость в сутки (р):</legend>
-				<span class="min">От 0</span>
-				<span class="max">До 3000</span>
+			<fieldset class="filters-fieldset price-section">
+				<legend class="price-section-title">Стоимость в сутки (Р):</legend>
+					<div class="filters-price">
+						<label class="filters-price-min" for="from">от</label>
+						<input type="text" tabindex="1" name="from" id="from" placeholder="0">
+						<label class="filters-price-max" for="to">до</label>
+						<input type="text" tabindex="2" name="to" id="to" placeholder="3000">
+					</div>
+					<div class="price-controls">
+						<div class="scale">
+							<div class="bar"></div>
+						</div>
+						<div class="range-toggle range-toggle-min"></div>
+						<div class="range-toggle range-toggle-max"></div>
+					</div>
 				<a class="button" href="#">Показать</a>
 			</fieldset>
 		</form>
@@ -145,20 +156,19 @@
 	</main>
 	 
 	<footer class="footer-main">
-         <a class="footer-main-button" href="#">#VisitSedona</a>
-         <div class="footer-social">
-         <ul>
+        <a class="footer-main-button" href="#">#VisitSedona</a>
+        <div class="footer-social">
+        <ul>
            <li><a class="social-button" href="#">Вконтакте</a></li>
            <li><a class="social-button" href="#">Фейсбук</a></li>
            <li><a class="social-button" href="#">Инстаграм</a></li>
-         </ul>
-         </div>
-         <p class="footer-copyright">
-         	<a class="footer-copyright-logo">
+        </ul>
+        </div>
+        <p class="footer-copyright">
+         	<a class="footer-copyright-logo" href="https://htmlacademy.ru">
          	<span>Website by </span>
-         	
          	<img src="img/logo-namesvg.svg"></a>
-				
+		</p>		
     </footer>
   </body>
 </html>
