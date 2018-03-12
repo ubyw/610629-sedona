@@ -23,7 +23,7 @@
       <section class="intro">
         <h1 class="visually-hidden">Sedona</h1>
         
-          <img src="image/index-sedona.png" width="auto" height="200" alt="Фото Седона">
+          <img src="img/index-bg.jpg" width="1200" height="773" alt="Фото Седона">
         
       </section>
       <section class="features">
@@ -34,12 +34,12 @@
           <li>
             <h3>Настоящий городок</h3>
             <p>Седона не аттракцион для туристов, там течет своя жизнь</p>
-            <a href="#"><img src="img/city.jpg" width="800" height="256" alt="Фото города"></a>
+            <a href="#"><img src="img/city.jpg" width="800" height="401" alt="Фото города"></a>
           </li>
           <li>
             <h3>Там есть мост дьявола</h3>                
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-            <a href="#"><img src="img/diabolo.jpg" width="800" height="256" alt="Фото моста дьявола"></a>
+            <a href="#"><img src="img/diabolo.jpg" width="800" height="400" alt="Фото моста дьявола"></a>
           </li>
           <li>
             <h3>Небольшая площадь</h3>                
@@ -72,34 +72,40 @@
         </ul>
       </section>  
       <section class="request">
-          <a href="#"><img src="img/index-map.svg" width="auto" height="250"
+          <a class="visually-hidden" href="#"><img src="img/mapjpg.jpg" width="1200" height="593"
           alt="Карта"></a>
           <h2>Заинтересовались?</h2>
           <p class="request-info">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <span class="request-info">Поиск гостиницы в Седоне</span>
+          <a class="request-info" href="#">Поиск гостиницы в Седоне</a>
           <!-- Здесь будет форма -->
           <form class="request-form" action="https://echo.htmlacademy.ru" method="post">
             <p class="request-item">
-              <span>Дата заезда:</span>
-              <label for="request-date-in"></label>
+              
+              <label for="request-date-in">Дата заезда:</label>
               <input id="request-date-in" type="text" name="date-in" value="" placeholder="24 апреля 2017">
+              <button class="request-date-in" type="submit"><img src="img/calendar.svg" alt="calendar"></button>
             </p>
             <p class="request-item">
-              <span>Дата выезда:</span>
-              <label for="request-date-out"></label>
+              
+              <label for="request-date-out">Дата выезда:</label>
               <input id="request-date-out" type="text" name="date-out" value="" placeholder="4 июля 2017">
+              <button class="request-date-out" type="submit"><img src="img/calendar.svg" alt="calendar"></button>
             </p>
             <p class="request-item">
-              <span>Взрослые:</span>
-              <label for="request-adults-number"></label>
+              
+              <label for="request-adults-number">Взрослые:</label>
               <input id="request-adults-number" type="text" name="adults-number" value="" placeholder="2">
+              <button type="submit" class="request-adults-number-plus">+</button>
+              <button type="submit" class="request-adults-number-minus">-</button>
             </p>
             <p class="request-item">
-              <span>Дети:</span>
-              <label for="request-childs-number"></label>
+              
+              <label for="request-childs-number">Дети:</label>
               <input id="request-childs-number" type="text" name="childs-number" value="" placeholder="0">
+               <button type="submit" class="request-childs-number-plus">+</button>
+              <button type="submit" class="request-childs-number-minus">-</button>
             </p>
-            <a class="button" href="#">Найти</a>
+            <button type="submit" class="request-button">Найти</button>
           </form>
       </section>
     </main>
@@ -113,13 +119,12 @@
         </ul>
         </div>
           <p class="footer-copyright">
-          <a class="footer-copyright-logo">
-            <span>WEBSITE BY </span>
-            <img src="img/logo-namesvg.svg"></a>
-		   
+          <a class="footer-copyright-logo" href="https://htmlacademy.ru">
+            <span>Website by </span>
+            <img src="img/logo-htmlacademy.svg"></a>
+		      </p>
     </footer>
   </body>
 </html>
-<!-- Это тест работы гитхабдесктоп-->
-<!-- Test Test Test Test Test -->
-<!--Test Test test Test Test-->
+
+
