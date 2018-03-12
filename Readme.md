@@ -1,7 +1,9 @@
 # Личный проект «Седона»
 
 * Студент: [Владимир Ильин](https://up.htmlacademy.ru/htmlcss/20/user/610629).
-* Наставник: [Юрий Зайцев](https://up.htmlacademy.ru/htmlcss/20/user/89805).
+
+* Наставник:[Юрий Зайцев](https://up.htmlacademy.ru/htmlcss/20/user/89805) .
+
 
 ---
 
