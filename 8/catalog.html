@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+    
+    <link href="css/style.css" rel="stylesheet">
     <base href="https://htmlacademy-htmlcss.github.io/610629-sedona/8/">
 </head>  
   <body>
@@ -15,7 +18,7 @@
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
           <li><a href="#">Карта штата</a></li>
-          <li class="site-nav-current"><a href="catalog.html">Гостиницы</a></li>
+          <li class="site-nav-current">Гостиницы</li>
         </ul>
       </nav>
     </header>
@@ -24,7 +27,7 @@
 	<section class="filters">
 		<h2 class="visually-hidden">Фильтр услуг</h2>
 		<!-- Здесь будет форма -->
-		<img class="visually-hidden" src="img/catalog-bg.jpg" width="1200" height="562" alt="filters background photo">
+		
 		<form class="filters" method="get" action="https://echo.htmlacademy.ru">
 			<fieldset>
 				<legend>Инфраструктура:</legend>
@@ -76,15 +79,16 @@
 						<div class="range-toggle range-toggle-min"></div>
 						<div class="range-toggle range-toggle-max"></div>
 					</div>
-				<a class="button" href="#">Показать</a>
+				<button type="button" class="hotel-variants" >Показать</button>
 			</fieldset>
 		</form>
 	</section>
 	<section class="catalog">
 		<h2>Найдено:</h2>
 		<output name="sum">[3]</output>
+		<div class="sorting">
 		<p>Сортировка:</p>
-		<ul class="sortin-one">
+		<ul class="sorting-one">
 			<li class="sorting-one-current"><a href="#">По цене</a></li>
 			<li><a href="#">По типу</a></li>
 			<li><a href="#">По рейтингу</a></li>
@@ -92,19 +96,19 @@
 		<ul class="sorting-two">
 			<li><a href="#">По возрастанию</a></li>
 			<li><a href="#">По убыванию</a></li>
-			
 		</ul>	
+		</div>	
 		<ul class="catalog-list">
 			<li class="catalog-item">
-				<h3>
+				<h2>
 					<a href="catalog-item.html">
-						Amara Resort $ Spa
+						Amara Resort & Spa
 					</a>
-				</h3>
+				</h2>
 				<p class="catalog-item-image">
-					<a href="catalog.html">
+					
 					<img src="img/hotel.jpg" width="135" height="90" alt="Hotel Amara Resort">
-					</a>
+					
 				</p>
 				<p class="catalog-item-type">Гостиница</p>
 				<p class="catalog-item-price">
@@ -115,15 +119,15 @@
 				<p class="catalog-item-rating">Рейтинг: <span>8.5</span></p>
 			</li>
 			<li class="catalog-item">
-				<h3>
+				<h2>
 					<a href="catalog-item.html">
 						Desert Quail Inn
 					</a>
-				</h3>
+				</h2>
 				<p class="catalog-item-image">
-					<a href="catalog.html">
+					
 					<img src="img/motel.jpg" width="135" height="90" alt="Motel Desert Quail Inn">
-					</a>
+				
 				</p>
 				<p class="catalog-item-type">Мотель</p>
 				<p class="catalog-item-price">
@@ -134,15 +138,15 @@
 				<p class="catalog-item-rating">Рейтинг: <span>8.9</span></p>
 			</li>
 			<li class="catalog-item">
-				<h3>
+				<h2>
 					<a href="catalog-item.html">
 						Villas at Poco Diabolo
 					</a>
-				</h3>
+				</h2>
 				<p class="catalog-item-image">
-					<a href="catalog.html">
+			
 					<img src="img/appartment.jpg" width="135" height="90" alt="Appartment Villas at Poco Diabolo">
-					</a>
+					
 				</p>
 				<p class="catalog-item-type">Апартаменты</p>
 				<p class="catalog-item-price">
