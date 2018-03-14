@@ -5,7 +5,7 @@ body {
 	font-size: 14px;
 	font-weight: 700;
 	line-height: 26px;
-	color: red;
+	color: #000000;
 	text-transform: uppercase;
 
 	margin: 0;
@@ -26,10 +26,10 @@ p {
 .site-nav a:active {
 	color: #766357;
 }
-.advantages-title {
+.font-size-21 {
 	font-size: 21px;
 }
-.advantages-invite  {
+.font-size-11  {
 	font-size: 11px;
 	font-weight: 400;
 }
@@ -38,4 +38,27 @@ p {
 	font-weight: 400;
 	line-height: 18px;
 	
+}
+legend {
+	font-size: 16px;
+	line-height: 21px;
+}
+label {
+	font-weight: 400;
+	line-height: 21px;
+}
+.sorting {
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 18px;
+}
+.catalog-item-type,
+.catalog-item-rating,
+b {
+	font-weight: 400;
+	line-height: 21px;
+}
+
+.footer-copyright span {
+	font-weight: 400;
 }
