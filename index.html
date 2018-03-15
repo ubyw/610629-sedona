@@ -84,27 +84,49 @@
               
               <label for="request-date-in">Дата заезда:</label>
               <input id="request-date-in" type="text" name="date-in" value="" placeholder="24 апреля 2017">
-              <button class="request-date-in" type="button"><img src="img/calendar.svg" alt="calendar"></button>
+              
+              <button class="request-date-in" type="button">
+                <span class="visually-hidden">Панель выбора даты</span>
+                <img src="img/calendar.svg" alt="calendar">
+              </button>
+              
             </p>
             <p class="request-item">
               
               <label for="request-date-out">Дата выезда:</label>
               <input id="request-date-out" type="text" name="date-out" value="" placeholder="4 июля 2017">
-              <button class="request-date-out" type="button"><img src="img/calendar.svg" alt="calendar"></button>
+              
+              <button class="request-date-out" type="button">
+                <span class="visually-hidden">Панель выбора даты</span>
+                <img src="img/calendar.svg" alt="calendar">
+              </button>
+              
             </p>
             <p class="request-item">
               
               <label for="request-adults-number">Взрослые:</label>
               <input id="request-adults-number" type="text" name="adults-number" value="" placeholder="2">
-              <button type="button" class="request-adults-number-plus">+</button>
-              <button type="button" class="request-adults-number-minus">-</button>
+              
+              <button type="button" class="request-adults-number-plus">
+                <span class="visually-hidden">+</span>
+              </button>
+              <button type="button" class="request-adults-number-minus">
+                <span class="visually-hidden">-</span>
+              </button>
+              
             </p>
             <p class="request-item">
               
               <label for="request-childs-number">Дети:</label>
               <input id="request-childs-number" type="text" name="childs-number" value="" placeholder="0">
-               <button type="button" class="request-childs-number-plus">+</button>
-              <button type="button" class="request-childs-number-minus">-</button>
+              
+              <button type="button" class="request-childs-number-plus">
+                <span class="visually-hidden">+</span>
+              </button>
+              <button type="button" class="request-childs-number-minus">
+                <span class="visually-hidden">-</span>
+              </button>
+              
             </p>
             <button type="submit" class="request-button">Найти</button>
           </form>
