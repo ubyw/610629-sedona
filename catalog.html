@@ -89,12 +89,21 @@
 		<p>Сортировка:</p>
 		<ul class="sorting-one">
 			<li class="sorting-one-current"><a href="#">По цене</a></li>
-			<li><a href="#">По типу</a></li>
-			<li><a href="#">По рейтингу</a></li>
+			<li><a class="sorting-one-item" href="#">По типу</a></li>
+			<li><a class="sorting-one-item" href="#">По рейтингу</a></li>
 		</ul>
 		<ul class="sorting-two">
-			<li><a href="#">По возрастанию</a></li>
-			<li><a href="#">По убыванию</a></li>
+			<li><a class="sorting-two-item" href="#">
+					<span class="visually-hidden">По возрастанию</span>
+					<img src="img/icon-up-dir.svg" alt="Список по возрастанию">
+				</a>
+			</li>
+
+			<li><a class="sorting-two-item" href="#">
+					<span class="visually-hidden">По убыванию</span>
+					<img src="img/icon-down-dir.svg" alt="Список по убыванию">
+				</a>
+			</li>
 		</ul>	
 		</div>	
 		<ul class="catalog-list">
@@ -163,11 +172,13 @@
         <a class="footer-main-button" href="#">#VisitSedona</a>
         <div class="footer-social">
         <ul class="footer-list">
-     		<span class="visually-hidden">
-           	<li><a class="social-button" href="#">Вконтакте</a></li>
-           	<li><a class="social-button" href="#">Фейсбук</a></li>
-           	<li><a class="social-button" href="#">Инстаграм</a></li>
-           </span>
+        	<li><a class="social-button" href="#">
+            	<span class="visually-hidden">Вконтакте</span></a></li>
+          	<li><a class="social-button" href="#">
+            	<span class="visually-hidden">Фейсбук</span></a></li>
+          	<li><a class="social-button" href="#">
+            	<span class="visually-hidden">Инстаграм</span></a></li>
+     		
         </ul>
         </div>
         <p class="footer-copyright">
