@@ -140,6 +140,29 @@ b {
 	font-weight: 400;
 	line-height: 21px;
 }
+.catalog-item-name:hover {
+	color: #81b3d2;
+}
+.button-one {
+	color: #ffffff;
+	background-color: #81b3d2;
+	
+}
+.button-one:hover {
+	background-color: #669ec0;
+}
+.button-one:active {
+	background-color: #5496bd;
+}
+.button-two {
+	color: #ffffff;
+	background-color: #766357;
+}
+.button-two:hover {
+	background-color: #604e43;
+}.button-two:active {
+	background-color: #503e33;
+}
 .button {
 	font-size: 14px;
 	font-weight: 700;
