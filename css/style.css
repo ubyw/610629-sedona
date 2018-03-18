@@ -1,5 +1,5 @@
 body {
-	font-family: "PT+Sans", Arial,Helvetica,sans-serif;
+	font-family: "PT Sans", Arial,Helvetica,sans-serif;
 	font-style: normal;
 	
 	font-size: 14px;
@@ -7,13 +7,13 @@ body {
 	line-height: 26px;
 	color: #000000;
 	text-transform: uppercase;
-	background-color: #f2f2f2;
+	
 	margin: 0;
 	padding: 0;
-
-	
 }
-
+html {
+	background-color: #f2f2f2;
+}
 a {
 	text-decoration: none;
 }
@@ -34,18 +34,20 @@ a {
 	list-style: none;
 }
 .intro {
-	background-image: url("../img/index-bg.jpg");
-	background-position: top center;
+	background-color: #9ac2db;
+	background-image: url("../img/filter-maska.png"), url("../img/index-bg.jpg");
+	background-position: center bottom, center top;
+	background-size: 100%, cover;
 	background-repeat: no-repeat;
 }
 .site-nav a:hover {
-	color: #81b3d2;
+	color: rgba(129 179 210 .8);
 }
-.site-nav a:focus {
-	color: #766357;
+.site-nav a:active {
+	color: rgba(0 0 0 .8);
 }
 .site-nav-current {
-	color: #766357;
+	color: rgba(118 99 87 .8);
 }
 
 .advantages-title {
@@ -87,7 +89,9 @@ a {
 }
 .request {
 	text-align: center;
-	background-color: #f2f2f2;
+}
+.request img {
+	background-color: #9ac2db;
 }
 .request-offer {
 	background-color: #ffffff;
@@ -105,19 +109,18 @@ a {
 	font-weight: 400;
 	line-height: 24px;
 }
-.request-hotel-btn {
+.request-hotel-button {
 	color: #ffffff;
 	font-size: 21px;
 	font-weight: 700;
 	line-height: 26px;
 	background-color: #766357;
 }
-.request-hotel-btn:hover {
+.request-hotel-button:hover {
 	background-color: #604e43;
 }
-.request-hotel-btn:active {
+.request-hotel-button:active {
 	background-color: #503e33;
-	opacity: .3;
 }
 .request-form {
 	background-color: #ffffff;
@@ -145,22 +148,25 @@ a {
 }
 .request-item span {
 	border: none;
-	background-color: none;
+	background-color: #f2f2f2;
 }
-.request-item input {
+#request-date-in,
+#request-date-out {
 	background-color: #f2f2f2;
 	border: 2px solid #000000;
 }
-.request-item input:hover {
+#request-date-in:hover,
+#request-date-out:hover {
 	background-color: #ebebeb;
 }
-.request-item input:focus {
-	background-color: regba(255 255 255 .3);
+#request-date-in:active,
+#request-date-out:active {
+	background-color: rgba(255 255 255 .7);
 }
 
 
 .inner-page {
-	font-family: "PT+Sans", Arial,Helvetica,sans-serif;
+	font-family: "PT Sans", Arial,Helvetica,sans-serif;
 	font-style: normal;
 	font-size: 14px;
 	font-weight: 700;
@@ -175,34 +181,44 @@ a {
 	background-position: top left;
 	background-repeat: no-repeat;
 }
+.main-nav {
+	background-image: url("../img/catalog-bg.jpg");
+	background-size: 100%, cover;
+	background-position: center top;
+	background-repeat: no-repeat;
+}
 .user-choice fieldset {
 	border: none;
 }
 
 .user-choice legend {
 	font-size: 16px;
+	line-height: 21px;
 	color: #ffffff;
 }
 .user-choice label {
+	font-size: 14px;
 	font-weight: 400;
+	line-height: 21px;
 	color: #ffffff;
 }
 
-.filters-price {
+.filters-price-request {
 	font-weight: 400;
+	line-height: 21px;
 }
 .filters-price-request input {
 	color: #ffffff;
 	background-color: #f2f2f2;
 	border: 2px solid white;
 }
-.hotel-variant-btn {
+.hotel-variant-button {
 	color: #ffffff;
 	background-color: #343331;
 	border: 2px solid white;
 }
-.hotel-variant-btn:hover,
-.hotel-variant-btn:focus {
+.hotel-variant-button:hover,
+.hotel-variant-button:focus {
 	color: #000000;
 	background-color: #ffffff;
 }
@@ -212,67 +228,59 @@ a {
 	line-height: 18px;
 }
 .catalog h2 {
+	color: #000000;
 	font-size: 21px;
+	font-weight: 700;
 	line-height: 26px;
 }
-.catalog h2:hover {
-	color: #81b3d2;
-	opacity: .3;
-}
-.catalog h2:active {
-	color: #000000;
-	opacity: .6;
-}
+
 .catalog-item-type,
 .catalog-item-price b {
-	color: #333333;
-	opacity: .3;
+	color: rgba(51 51 51 .8);
 	font-weight: 400;
 	line-height: 21px;
 }
-.catalog-item-type,
-b {
-	color: #333333;
-}
-.catalog-item-rating {
-	color: #666666;
-	background-color: #f2f2f2;
+.catalog-item-name {
+	font-size: 21px;
+	line-height: 26px;
+	color: #000000;
 }
 .catalog-item-name:hover {
 	color: #81b3d2;
 }
-.catalog-btn-info {
+.catalog-item-name:active {
+	color: rgba(0 0 0 .5);
+}
+.catalog-button-info {
+	font-size: 14px;
+	line-height: 21px;
 	color: #ffffff;
-	opacity: .9;
 	background-color: #81b3d2;
 }
-.catalog-btn-info:hover {
+.catalog-button-info:hover {
 	background-color: #669ec0;
-	opacity: .9;
 }
-.catalog-btn-info:active {
+.catalog-button-info:active {
 	background-color: #5496bd;
-	opacity: .9;
 }
-.catalog-btn-order {
+.catalog-button-order {
+	font-size: 14px;
+	line-height: 21px
 	color: #ffffff;
 	background-color: #766357;
-	opacity: .9;
 }
-.catalog-btn-order:hover {
+.catalog-button-order:hover {
 	background-color: #604e43;
-	opacity: .9;
 }
-.catalog-btn-order:active {
+.catalog-button-order:active {
 	background-color: #503e33;
-	opacity: .9;
 }
 .catalog-item-rating {
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 21px;
 	color: #666666;
-	opacity: .9;
+	background-color: #f2f2f2;
 }
 .button {
 	font-size: 14px;
@@ -289,19 +297,22 @@ b {
 	background-color: #ffffff;
 }
 .sorting-main-price {
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 18px;
 	color: #81b3d2;
-	opacity: .8;
 }
 .sorting-main-type,
 .sorting-main-rating {
-	color: #000000;
-	opacity: .8;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 18px;
+	color: rgba(0 0 0 .8);
 	text-decoration: underline;
 }
 .sorting-main-type:hover,
 .sorting-main-rating:hover {
-	color: #81b3d2;
-	opacity: .8;
+	color: rgba(129 179 210 .8);
 	text-decoration: underline;
 }
 .sorting-main-type:active,
@@ -311,29 +322,35 @@ b {
 }
 .sorting-active-up {
 	color: #81b3d2;
-	opacity: .8;
 }
 .sorting-price-down {
-	color: #000000;
-	opacity: .3;
+	color: rgba(0 0 0 .5);
 }
-.footer-main {
-	background-color: #f2f2f2;
-}
+
 .footer-main-button {
 	font-size: 21px;
+	color: #000000;
 }
 .footer-copyright span {
 	font-weight: 400;
+	line-height: auto;
+	color: rgba(0 0 0 .7);
 }
-.footer-copyright-logo:hover,
+.footer-copyright-logo {
+	color: #000000;
+}
+.footer-copyright-logo:hover {
+	color: rgba(129 179 210 .7);
+}
+
 .footer-copyright-logo:active {
-	opacity: 0.8;
+	color: rgba(0 0 0 .8);
 }
 .footer-list {
 	text-align: center;
 }
 .social-button {
+	color: #ffffff;
 	background-color: #81b3d2;
 }
 .social-button:hover {
