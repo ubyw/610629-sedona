@@ -36,6 +36,9 @@ a {
 .footer-list  {
 	list-style: none;
 }
+.main-nav-logo {
+	margin-left: 700px;
+}
 .intro {
 	background-color: #9ac2db;
 	background-image: url("../img/filter-maska.png"), url("../img/index-bg.jpg");
@@ -239,7 +242,7 @@ a {
 	padding: 0;
 	
 	background-image: url("../img/catalog-bg.jpg");
-	background-position: top left;
+	background-position: top center;
 	background-repeat: no-repeat;
 }
 .main-nav {
@@ -283,11 +286,7 @@ a {
 	color: #000000;
 	background-color: #ffffff;
 }
-.sorting {
-	font-size: 12px;
-	font-weight: 400;
-	line-height: 18px;
-}
+
 .catalog h2 {
 	color: #000000;
 	font-size: 21px;
@@ -348,8 +347,12 @@ a {
 	font-weight: 700;
 	line-height: 21px;
 }
-
-.sorting-price-active {
+.sorting {
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 18px;
+}
+.sorting-main .sorting-link-active {
 	font-size: 12px;
 	font-weight: 400;
 	line-height: 18px;
@@ -442,4 +445,29 @@ a {
 .social-button span{
 	width: 50px;
 	margin-left: 5px;
+}
+.user-choice {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	min-height: 300px;
+}
+.filters-infrastructure {
+	width: 300px;
+	min-height: 280px;
+	margin-left: 100px;
+}
+.filters-accomodation {
+	width: 300px;
+	min-height: 280px;
+}
+.filters-price {
+	width: 300px;
+	min-height: 280px;
+
+}
+.sorting {
+	margin-top: 150px;
 }
