@@ -10,9 +10,10 @@
   <body>
     <header class="main-header">
       <nav class="main-nav">
-        <a class="main-nav-logo">
-          <img src="img/logo.png" width="138" height="70" alt="Логотип Седона">
-        </a>
+        <div class="main-header-logo"
+          <a class="main-nav-logo">
+          <img src="img/logo.png" width="190" height="70" alt="Логотип Седона"></a>
+        </div>
         <ul class="site-nav">
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
@@ -22,21 +23,16 @@
       </nav>
     </header>
     <main class="container">
-      <div class="index-columns">
         <section class="intro">
           <h1 class="visually-hidden">Sedona</h1>
-        
           <img src="img/text-sedona-index.svg" width="460" height="350" alt="Фото Седона">
-        
         </section>
-      </div>
-      
+            
         <section class="advantages">
-          <div class="index-columns">
             <h2 class="visually-hidden">Преимущества</h2>
             <p class="advantages-title">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
             <p class="advantages-subtitle">Рассмотрим 5 причин, по которым Седона стала круче, чем Гранд Каньон!</p>
-          </div>
+          
             <ul class="advantages-list">
               <div class="index-columns">
                 <li class="advantages-photo">
@@ -52,23 +48,23 @@
               </div>
               <div class="index-advantages">
                 <div>
-                <li class="advantages-desc">
-                  <h3>Небольшая площадь</h3>                
-                  <p>Все достопримечательности находятся очень близко</p>
-                </li>
-              </div>
-              <div>
-                <li class="advantages-desc">
-                  <h3>Красивая дорога</h3>                
-                  <p>Ехать в Седону из Лас-Вегаса совсем не скучно</p>
-                </li>
-              </div>
-              <div>
-                <li class="advantages-desc">
-                  <h3>Мало туристов</h3>                
-                  <p>Большинство едет в Гранд Каньон и толпится там</p>
-                </li>
-              </div>
+                  <li class="advantages-desc">
+                    <h3>Небольшая площадь</h3>                
+                    <p>Все достопримечательности находятся очень близко</p>
+                  </li>
+                </div>
+                <div>
+                  <li class="advantages-desc">
+                    <h3>Красивая дорога</h3>                
+                    <p>Ехать в Седону из Лас-Вегаса совсем не скучно</p>
+                  </li>
+                </div>
+                <div>
+                  <li class="advantages-desc">
+                    <h3>Мало туристов</h3>                
+                    <p>Большинство едет в Гранд Каньон и толпится там</p>
+                  </li>
+                </div>
               </div>
               <div class="index-columns">
                 <li>
@@ -90,8 +86,7 @@
               </div>
             </ul>
       </section>
-      <div class="index-columns">  
-        <section class="request">
+      <section class="request">
           <img  src="img/mapjpg.jpg" width="1200" height="593" alt="Карта">
           <div class="request-offer">
           <h2>Заинтересовались?</h2>
@@ -102,57 +97,44 @@
           <form class="request-form" action="https://echo.htmlacademy.ru" method="post">
             <a class="request-hotel-button" href="#">Поиск гостиницы в Седоне</a>
             <p class="request-item">
-              
               <label for="request-date-in">Дата заезда:</label>
               <input id="request-date-in" type="text" name="date-in" value="" placeholder="24 апреля 2017">
-              
               <button class="request-date-in" type="submit">
                 <span class="visually-hidden">Панель выбора даты</span>
                 <img src="img/calendar.svg" alt="calendar">
               </button>
-              
             </p>
             <p class="request-item">
-              
               <label for="request-date-out">Дата выезда:</label>
               <input id="request-date-out" type="text" name="date-out" value="" placeholder="4 июля 2017">
-              
               <button class="request-date-out" type="submit">
                 <span class="visually-hidden">Панель выбора даты</span>
                 <img src="img/calendar.svg" alt="calendar">
               </button>
-              
             </p>
             <p class="request-item">
-              
               <label for="request-adults-number">Взрослые:</label>
               <input id="request-adults-number" type="number" name="adults-number" value="" placeholder="2">
-              
               <button type="button" class="request-adults-number-plus">
                 <span class="visually-hidden">Увеличить количество</span>
               </button>
               <button type="button" class="request-adults-number-minus">
                 <span class="visually-hidden">Уменьшить количество</span>
               </button>
-              
             </p>
             <p class="request-item">
-              
               <label for="request-childs-number">Дети:</label>
               <input id="request-childs-number" type="number" name="childs-number" value="" placeholder="0">
-              
               <button type="button" class="request-childs-number-plus">
                 <span class="visually-hidden">Увеличить количество</span>
               </button>
               <button type="button" class="request-childs-number-minus">
                 <span class="visually-hidden">Уменьшить количество</span>
               </button>
-              
             </p>
             <button type="submit" class="request-button">Найти</button>
           </form>
       </section>
-      </div>
     </main>
     <footer class="footer-main">
       <div class="footer-container">

@@ -1,16 +1,14 @@
 body {
+	margin: 0;
+	padding: 0;
+
 	font-family: "PT Sans", Arial, Helvetica, sans-serif;
 	font-style: normal;
-	
 	font-size: 14px;
 	font-weight: 700;
 	line-height: 26px;
 	color: #000000;
 	text-transform: uppercase;
-	min-width: 1120px;
-	min-height: 2000px;
-	margin: 0;
-	padding: 0;
 }
 html {
 	min-width: 1120px;
@@ -36,9 +34,6 @@ a {
 .footer-list  {
 	list-style: none;
 }
-.main-nav-logo {
-	margin-left: 700px;
-}
 .intro {
 	background-color: #9ac2db;
 	background-image: url("../img/filter-maska.png"), url("../img/index-bg.jpg");
@@ -62,33 +57,7 @@ a {
 .site-nav-current {
 	color: rgba(118,99,87, .8);
 }
-.site-nav {
-	display: flex;
-	flex-direction: row;
-	padding: 10px 50px;
-	justify-content: space-around;
-}
-.index-advantages  {
-	
-	margin: 0;
-	padding: 0;
-	min-height: 200px;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-}
-.advantages-desc {
-	width: 200px;
-	margin-left: 20px;
-}
-.more-advantages {
-	margin: 0;
-	padding: 0;
-	min-height: 200px;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-}
+
 .more-advantages-item {
 	width: 200px;
 	margin-left: 20px;
@@ -178,13 +147,19 @@ a {
 	text-transform: uppercase;
 }
 
-.request-item input:placeholder {
+.request-item input {
 	font-size: 14px;
 	font-weight: 700;
 	line-height: 21px;
 	text-transform: uppercase;
-	color: red;
-	background-color: yellow;
+	color:#000000;
+	background-color: #f2f2f2;
+}
+.request-item input:hover {
+	background-color: #ebebeb;
+}
+.request-item input:focus {
+	background-color: #ffffff;
 }
 .request-date-in,
 .request-date-out {
@@ -362,28 +337,7 @@ a {
 	text-decoration: none;
 }
 
-.footer-container {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	margin-top: 50px;
-}
-.footer-main-button {
-	font-size: 21px;
-	color: #000000;
-	width: 300px;
-	margin: 0;
-	margin-right: 100px;
-	min-height: 50px;
-	
-}
-.footer-social {
-	width: 300px;
-	min-height: 50px;
-	margin: 0;
-	margin-left: 100px;
-	
-}
+
 .footer-copyright {
 	width: 300px;
 	margin: 0;
@@ -418,6 +372,113 @@ a {
 }
 .social-button span:active {
 	background-color: #5496bd;
+}
+/*----Сетки------*/
+.main-header {
+	margin-bottom: 30px;
+	min-height: 70px;
+}
+.site-nav {
+	width: 1200px;
+	display: flex;
+	flex-direction: row;
+	padding: 20px 70px;
+	justify-content: space-between;
+}
+.main-nav-logo {
+	width: 190px;
+	min-height: 70px
+	margin-left: 500px;
+}
+
+.container {
+	width: 1200px;
+	margin: 0;
+	padding: 0;
+}
+.intro {
+	width: 120px;
+	min-height: 540px;
+}
+.advantages {
+	width: 1200px;
+	min-height: 200px;
+}
+.advantages-list {
+	width: 1200px;
+	min-height: 500px;
+}
+.advantages-photo {
+	width: 1200px;
+	min-height: 250px;
+}
+
+.index-advantages  {
+	width: 1200px;
+	margin: 0;
+	padding: 0;
+	min-height: 250px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.advantages-desc {
+	width: 200px;
+	margin-left: 20px;
+}
+.more-advantages {
+	width: 1200px;
+	margin: 0;
+	padding: 0;
+	min-height: 330px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.request {
+	width: 1200px;
+	min-height: 750px;
+}
+.request-offer {
+	width: 1200px;
+	min-height: 300px;
+}
+.request-form {
+	width: 570px;
+	min-height: 480;
+}
+.footer {
+	margin-top: 50px;
+
+}
+.footer-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+}
+.footer-main-button {
+	font-size: 21px;
+	color: #000000;
+	width: 300px;
+	margin: 0;
+	margin-right: 100px;
+	min-height: 120px;
+	
+}
+.footer-social {
+	width: 145px;
+	min-height: 120px;
+	margin: 0;
+	margin-left: 100px;
+	
+}
+.footer-copyright {
+	width: 150px;
+	margin: 0;
+	margin-left: auto;
+	max-height: 120px;
+
 }
 .footer-list {
 	display: flex;
@@ -455,3 +516,4 @@ a {
 .sorting {
 	margin-top: 150px;
 }
+
