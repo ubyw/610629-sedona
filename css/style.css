@@ -175,57 +175,40 @@ a {
 	font-size: 14px;
 	font-weight: 700;
 	line-height: 21px;
-	text-align: center;
-	vertical-align: middle;
 	text-transform: uppercase;
-	border: none;
-	background-color: #f2f2f2;
-}
-.request-item label:hover {
-	background-color: #ebebeb;
-}
-.request-item label:focus {
-	background-color: #ffffff;
-}
-.request-button {
-	font-size: 21px;
-	font-weight: 700;
-	line-height: 26px;
-	color: #ffffff;
-	background-color: #81b3d2;
-	text-transform: uppercase;
-	border: none;
-}
-.request-button:hover {
-	background-color: #669ec0;
-}
-.request-button:focus {
-	background-color: #5496bd;
 }
 
-#request-date-in,
-#request-date-out {
-	background-color: #f2f2f2;
+.request-item input:placeholder {
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 21px;
+	text-transform: uppercase;
+	color: red;
+	background-color: yellow;
 }
-#request-date-in:hover,
-#request-date-out:hover {
+.request-date-in,
+.request-date-out {
+	background-color: rgba(242,242,242,.5);
+}
+.request-date-in:hover,
+.request-date-out:hover {
 	background-color: #ebebeb;
 }
-#request-date-in:active,
-#request-date-out:active {
+.request-date-in:active,
+.request-date-out:active {
 	background-color: rgba(255,255,255, .7);
 }
-#request-adults-number,
-#request-childs-number {
+.request-adults-number,
+.request-childs-number {
 	color: #a9a9a9;
 	background-color: #f2f2f2;
 }
-#request-adults-number:hover,
-#request-childs-number:hover {
+.request-adults-number:hover,
+.request-childs-number:hover {
 	color: #000000;
 }
-#request-adults-number:active,
-#request-childs-number:active {
+.request-adults-number:active,
+.request-childs-number:active {
 	color: #81b3d2;
 }
 
@@ -240,10 +223,7 @@ a {
 	background-color: #ffffff;
 	margin: 0;
 	padding: 0;
-	
-	background-image: url("../img/catalog-bg.jpg");
-	background-position: top center;
-	background-repeat: no-repeat;
+
 }
 .main-nav {
 	background-color: #ffffff;
@@ -251,7 +231,11 @@ a {
 .user-choice fieldset {
 	border: none;
 }
-
+.filters {
+	background-image: url("../img/catalog-bg.jpg");
+	background-position: top center;
+	background-repeat: no-repeat;
+}
 .user-choice legend {
 	font-size: 16px;
 	line-height: 21px;
