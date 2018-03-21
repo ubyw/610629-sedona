@@ -1,7 +1,8 @@
 body {
 	margin: 0;
 	padding: 0;
-
+	width: 1200px;
+	
 	font-family: "PT Sans", Arial, Helvetica, sans-serif;
 	font-style: normal;
 	font-size: 14px;
@@ -9,11 +10,13 @@ body {
 	line-height: 26px;
 	color: #000000;
 	text-transform: uppercase;
+	border: 2px solid blue;
 }
 html {
-	min-width: 1120px;
+	min-width: 1200px;
 	min-height: 2000px;
 	background-color: #f2f2f2;
+	
 }
 a {
 	text-decoration: none;
@@ -34,14 +37,25 @@ a {
 .footer-list  {
 	list-style: none;
 }
+.main-header {
+	width: 1200px;
+	min-height: 100px;
+	margin-bottom: 20px;
+	border: 1px solid yellow;
+}
+
 .intro {
+	width: 1200px;
+	min-height: 550px;
 	background-color: #9ac2db;
 	background-image: url("../img/filter-maska.png"), url("../img/index-bg.jpg");
 	background-position: center bottom, center top;
-	background-size: 100%, cover;
+	background-size: 100%, 100%;
 	background-repeat: no-repeat;
 }
 .site-nav {
+	width:1200px;
+	min-height: 200px;
 	font: inherit;
 	list-style: none;
 }
@@ -57,7 +71,9 @@ a {
 .site-nav-current {
 	color: rgba(118,99,87, .8);
 }
-
+.advantages {
+	width: 1200px;
+}
 .more-advantages-item {
 	width: 200px;
 	margin-left: 20px;
@@ -374,45 +390,87 @@ a {
 	background-color: #5496bd;
 }
 /*----Сетки------*/
-.main-header {
-	margin-bottom: 30px;
-	min-height: 70px;
+.main-nav {
+	width: 1200px;
+	min-height: 50px;
+	border: 1px solid blue;
 }
 .site-nav {
 	width: 1200px;
 	display: flex;
 	flex-direction: row;
-	padding: 20px 70px;
-	justify-content: space-between;
+	padding: 20px 0;
+	margin-bottom: 10px;
+	justify-content: space-around;
+	border: 1px solid red;
 }
-.main-nav-logo {
+.main-nav-logo-wrapper {
+	order: 3;
 	width: 190px;
-	min-height: 70px
+	height: 70px;
 	margin-left: 500px;
+	padding: 0 20px;
+	border: 1px solid yellow;
+	
 }
 
 .container {
 	width: 1200px;
 	margin: 0;
 	padding: 0;
+	display: flex;
+	flex-direction: column;
+	border: 2px solid black;
 }
 .intro {
-	width: 120px;
+	width: 1200px;
 	min-height: 540px;
+	border: 1px solid yellow;
+}
+.intro-title {
+	margin-left: 350px;
 }
 .advantages {
 	width: 1200px;
-	min-height: 200px;
+	margin: 0;
+	padding: 0;
+	
+	min-height: 1200px;
 }
 .advantages-list {
 	width: 1200px;
 	min-height: 500px;
+	margin-left: auto;
+	
+	border: 3px solid green;
 }
-.advantages-photo {
+.advantages-photo-city {
 	width: 1200px;
+	display: flex;
+	
+	flex-direction: row;
+	justify-content: flex-start;
+	min-height: 250px;
+	border: 1px solid yellow;
+	margin-left: 0;
+}
+.city-desc {
+	width: 300px;
+	min-height: 250px;
+	margin-left: 0;
+}
+.advantages-photo-diabolo {
+	width: 1200px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	min-height: 250px;
+	margin-left: 0;
+}
+.diabolo-desc {
+	width: 300px;
 	min-height: 250px;
 }
-
 .index-advantages  {
 	width: 1200px;
 	margin: 0;
@@ -421,6 +479,8 @@ a {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
+	border: 1px solid red;
+	margin-bottom: 10px;
 }
 .advantages-desc {
 	width: 200px;
@@ -434,24 +494,34 @@ a {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
+	border: 1px solid black;
 }
 .request {
 	width: 1200px;
 	min-height: 750px;
+	border: 1px solid red;
 }
 .request-offer {
 	width: 1200px;
-	min-height: 300px;
+	min-height: 100px;
+
 }
 .request-form {
 	width: 570px;
+	
+	margin-left: 300px;
+	border: 1px solid yellow;
 	min-height: 480;
 }
-.footer {
+.footer-main {
+	width: 1200px;
+	border: 1px solid green;
 	margin-top: 50px;
 
 }
 .footer-container {
+	width: 1200px;
+	border: 1px solid red;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -463,23 +533,26 @@ a {
 	width: 300px;
 	margin: 0;
 	margin-right: 100px;
+	padding: 45px 50px 0 60px;
 	min-height: 120px;
-	
+	border: 1px solid yellow;
 }
 .footer-social {
-	width: 145px;
+	width: 200px;
 	min-height: 120px;
 	margin: 0;
-	margin-left: 100px;
 	
+	border: 1px solid green;
 }
 .footer-copyright {
-	width: 150px;
+	width: 300px;
 	margin: 0;
 	margin-left: auto;
+	padding: 35px 20px 10px 50px;
 	max-height: 120px;
-
+	border: 1px solid blue;
 }
+/*
 .footer-list {
 	display: flex;
 	flex-direction: row;
@@ -516,4 +589,5 @@ a {
 .sorting {
 	margin-top: 150px;
 }
+*/
 
