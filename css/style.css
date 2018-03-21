@@ -214,7 +214,7 @@ a {
 	background-color: #ffffff;
 	margin: 0;
 	padding: 0;
-
+	border: 1px solid black;
 }
 .main-nav {
 	background-color: #ffffff;
@@ -551,6 +551,98 @@ a {
 	padding: 35px 20px 10px 50px;
 	max-height: 120px;
 	border: 1px solid blue;
+}
+.user-choice {
+	width: 1200px;
+	min-height: 200px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.filters-infrastructure {
+	width: 400px;
+	min-height: 200px;
+	border: 1px solid yellow;
+}
+.filters-accomodation {
+	width: 400px;
+	min-height: 200px;
+	border: 1px solid red;
+}
+.filters-price {
+	width: 400px;
+	min-height: 200px;
+	border: 1px solid yellow;
+}
+.sorting {
+	width: 1200px;
+	min-height: 100px;
+	padding: 10px 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+.sorting-title {
+	width: 300px;
+	min-height: 100px;
+	padding: 10px 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.sorting-main {
+	width: 400px;
+	min-height: 100px;
+	margin-left: 100px;
+	padding: 10px 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+.sorting-active {
+	width: 100px;
+	min-height: 100px;
+	padding: 10px 10px;
+	margin-left: auto;
+	display: flex;
+	flex-direction: row;
+}
+.catalog-list {
+	width: 1200px;
+	min-height: 600px;
+	border: 1px solid blue;
+	
+}
+.catalog-item {
+	width: 1200px;
+	min-height: 200px;
+	border: 1px solid red;
+	display: flex;
+	flex-direction: row;
+}
+.catalog-item-info {
+	width: 900px;
+	min-height: 200px;
+	border: 1px solid green;
+	 
+}
+.info-hotel-name {
+	width: 900px;
+	min-height: 50px;
+	display: flex;
+	flex-direction: row;
+}
+.info-hotel-price {
+	width: 900px;
+	min-height: 50px;
+	display: flex;
+	flex-direction: row;
+}
+.info-hotel-order {
+	width: 900px;
+	min-height: 50px;
+	display: flex;
+	flex-direction: row;
 }
 /*
 .footer-list {
