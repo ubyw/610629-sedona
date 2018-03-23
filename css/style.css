@@ -93,13 +93,15 @@ a {
 	font-weight: 400;
 	text-align: center;
 }
-.advantages-list h3:not(.advantages-list .city-desc) {
+.advantages-desc h3,
+.more-advantages-item h3 {
 	font-size: 21px;
 	font-weight: 700;
 	line-height: 21px;
 	color: #000000;
 }
-.advantages-list p:not(.advantages-list .city-desc) {
+.advantages-desc p,
+.more-advantages-item p {
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 21px;
@@ -109,7 +111,16 @@ a {
 	color: #ffffff;
 	background-color: #81b3d2;
 }
-
+.advantages-list .city-desc h3 {
+	font-size: 21px;
+	font-weight: 700;
+	line-height: 21px;
+}
+.advantages-list .city-desc p {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 21px;
+}
 .request {
 	text-align: center;
 }
@@ -235,6 +246,9 @@ a {
 .main-nav {
 	background-color: #ffffff;
 }
+.site-nav-current {
+	color: #766357;
+}
 .user-choice fieldset {
 	border: none;
 }
@@ -253,6 +267,9 @@ a {
 	font-weight: 400;
 	line-height: 21px;
 	color: #ffffff;
+}
+.filters-input[disabled] + label {
+	color: #a1b4a9;
 }
 .filters-price-request {
 	font-weight: 400;
@@ -277,10 +294,6 @@ a {
 	background-color: #ffffff;
 }
 .catalog-list {
-	margin: 0;
-	padding: 0;
-}
-.sorting {
 	margin: 0;
 	padding: 0;
 }
@@ -318,7 +331,7 @@ a {
 	background-color: #669ec0;
 }
 .catalog-button-info:active {
-	background-color: #5496bd;
+	background-color: rgba(84, 150, 189, .5);
 }
 .catalog-button-order {
 	font-size: 14px;
@@ -330,7 +343,7 @@ a {
 	background-color: #604e43;
 }
 .catalog-button-order:active {
-	background-color: #503e33;
+	background-color: rgba(80, 62, 51, .5);
 }
 .catalog-item-rating {
 	font-size: 14px;
@@ -345,6 +358,8 @@ a {
 	line-height: 21px;
 }
 .sorting {
+	margin: 0;
+	padding: 0;
 	font-size: 12px;
 	font-weight: 400;
 	line-height: 18px;
@@ -473,8 +488,13 @@ a {
 	width: 1200px;
 	min-height: 500px;
 	margin-left: auto;
+	display: flex;
+	flex-wrap: wrap;
 	
-	
+}
+.advantages-list li:not(:nth-child(1),:nth-child(2)) {
+	width: 33%;
+	min-height: 100px;
 }
 .advantages-photo-city {
 	width: 1200px;
@@ -503,17 +523,6 @@ a {
 
 	width: 300px;
 	min-height: 250px;
-}
-.index-advantages  {
-	width: 1200px;
-	margin: 0;
-	padding: 0;
-	min-height: 250px;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	
-	margin-bottom: 10px;
 }
 .advantages-desc {
 	width: 200px;
@@ -624,7 +633,7 @@ a {
 	width: 100px;
 	min-height: 100px;
 	padding: 10px 10px;
-	margin-left: auto;
+	margin-left: 50px;
 	display: flex;
 	flex-direction: row;
 }
